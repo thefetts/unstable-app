@@ -1,4 +1,4 @@
-package io.pivotal.monitoring.demo
+package io.pivotal.monitoring.unstable
 
 import java.util.*
 

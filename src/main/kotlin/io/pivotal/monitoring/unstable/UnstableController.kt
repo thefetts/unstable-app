@@ -1,4 +1,4 @@
-package io.pivotal.monitoring.demo
+package io.pivotal.monitoring.unstable
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController

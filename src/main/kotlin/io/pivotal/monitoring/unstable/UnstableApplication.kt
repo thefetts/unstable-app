@@ -1,4 +1,4 @@
-package io.pivotal.monitoring.demo
+package io.pivotal.monitoring.unstable
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
