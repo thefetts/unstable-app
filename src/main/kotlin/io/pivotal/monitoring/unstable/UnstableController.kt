@@ -14,7 +14,7 @@ class UnstableController {
 
     @GetMapping("/api/data/eventually")
     fun getDataEventually(): Map<String, Int> {
-        val timer = registry.timer("custom.timers", "slow.operations", "calculate.data")
+        val timer = registry.timer("slow.integration.call")
         timer.record({
             if (unlucky()) tenSecondPenalty()
         })
@@ -27,9 +27,9 @@ class UnstableController {
         return quizScores
     }
 
-    @GetMapping("/api/data/withCustomMetric")
+    @GetMapping("/api/data/costly")
     fun getDataWithCustomMetric(): Map<String, Int> {
-        val counter = registry.counter("custom.counters", "slow.integration.calls", "get.data")
+        val counter = registry.counter("costly.service.call")
         counter.increment()
         return quizScores
     }
