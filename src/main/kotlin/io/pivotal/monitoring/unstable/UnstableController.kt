@@ -28,7 +28,7 @@ class UnstableController {
     }
 
     @GetMapping("/api/data/costly")
-    fun getDataWithCustomMetric(): Map<String, Int> {
+    fun getDataCostly(): Map<String, Int> {
         val counter = registry.counter("costly.service.call")
         counter.increment()
         return quizScores
